@@ -1,0 +1,40 @@
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+.navbar {
+  background-color: white;
+}
+.logo {
+  font-size: 40px;
+  font-family: Baskerville;
+  color: #F56400;
+}
+.right-tags {
+  float: right;
+  color: #0192B5;
+  padding-right: 15px;
+  span {
+    padding-right: 10px;
+  }
+  i {
+    color: #666666;
+  }
+}
+.search-button {
+  background-color: #34A8C4;
+  color: white;
+}
