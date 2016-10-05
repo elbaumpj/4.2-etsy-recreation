@@ -7,33 +7,31 @@ var url = "https://api.etsy.com/v2/listings/active.js?api_key=cdwxq4soa7q4zuavbt
 var source = $('#photo-tiles').html();
 var template = handlebars.compile(source);
 
-//$('#products-container').append(template();
-
-console.log(template);
-
 
 
 function run(data) {
     var products = data.results;
-
+    console.log(products);
     listProducts(products);
 
   function listProducts(listofProducts) {
     listofProducts.forEach(function(product){
-          displayProduct(product);
+          //displayProduct(product)
     });
     }
 
-  function displayProduct(product) {
-    var image = product["Images"][0]["url_75x75"];
-    var title = product["title"];
-    var shopName = product["Shop"]["shop_name"];
-    var price = product["price"];
-    console.log(image, title, shopName, price);
-    return image, title, shopName, price;
-  }
+  // function displayProduct(product) {
+  //   // var image = product["Images"][0]["url_75x75"];
+  //   // var title = product["title"];
+  //   // var shopName = product["Shop"]["shop_name"];
+  //   // var price = product["price"];
+  //   // console.log(image, title, shopName, price);
+  //   // return image, title, shopName, price;
+  // }
+  _.each(products, function(productTile){
+      $('#products-container').append(template(productTile));
+ });
 }
-
 
 
 fetchJSONP(url, run);

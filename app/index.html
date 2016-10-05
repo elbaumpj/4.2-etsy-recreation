@@ -43,10 +43,26 @@
 <!-- end navbars -->
 
 <!-- start product tiles -->
-
-  <div id="products-container">
-
+<div class="row">
+  <div class="col-md-2">
+    <nav class="navbar navbar-default">
+      <p>Show results for:</p>
+      <div>
+        <span>Craft Supplies and Tools</span>
+        <span>Accessories</span>
+        <span>Home and Living</span>
+        <span>Clothing</span>
+        <span>Jewelry</span>
+      </div>
   </div>
+</nav>
+
+  <div class="col-md-10">
+      <div id="products-container">
+
+      </div>
+  </div>
+</div>
 
 <!-- end product tiles -->
 
@@ -75,12 +91,12 @@
 <!-- script -->
 
     <script id="photo-tiles" type="text/x-handlebars-template">
-      <div class="item-tile">
-        <img src="{{image}}" alt="" />
+      <div class="col-md-3 item-tile">
+        <img src={{Images.0.url_170x135}} alt="" />
         <div class="bottom-info">
-        <span>{{title}}</span>
-        <span>{{shopName}}</span>
-        <span>{{price}}</span>
+        <span class="title">{{title}}</span>
+        <span class="shop-name">{{Shop.shop_name}}</span>
+        <span class="price">{{price}}</span>
         </div>
       </div>
     </script>

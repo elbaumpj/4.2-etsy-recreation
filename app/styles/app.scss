@@ -45,12 +45,29 @@ img {
 .search-button {
   background-color: #34A8C4;
   color: white;
-  
+
 }
 .categories {
   padding-top: 10px;
   span {
     color: #777777;
     padding: 0 15px;
+  }
+}
+
+// end top nav bars
+
+
+// template styling
+.bottom-info {
+  font-family: "Graphik Web";
+}
+.item-tile {
+  img {
+    height: 100%;
+    width: 100%;
+  }
+  .title {
+    text-overflow: ellipsis;
   }
 }
