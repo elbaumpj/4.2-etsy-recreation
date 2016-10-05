@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title">
     <link rel="stylesheet" href="css/app.css">
   </head>
-  
+
   <body>
+    <!-- start navbars -->
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <span class="logo">Etsy</span>
@@ -28,25 +29,63 @@
       </div>
    </nav>
 
+   <nav class="navbar navbar-default categories">
+     <span>Clothing &amp; Accessories</span>
+     <span>Jewelry</span>
+     <span>Craft Supplies &amp; Tools</span>
+     <span>Weddings</span>
+     <span>Entertainment</span>
+     <span>Home &amp; Living</span>
+     <span>Kids &amp; Baby</span>
+     <span>Vintage</span>
+   </nav>
 
+<!-- end navbars -->
 
+<!-- start product tiles -->
 
-  <div id="album-container">
+  <div id="products-container">
 
   </div>
 
+<!-- end product tiles -->
+
+<!-- footer -->
+
+<footer class="footer">
+  <div class="col-md-2">
+    <p>Turn your passion into a business</p>
+    <button type="button" name="button">Open a shop</button>
+    <p>Sell on Etsy</p>
+    <p>Open a shop</p>
+    <p>Seller Handbook</p>
+    <p>Etsy credit card reader</p>
+    <p>Manufacturing</p>
+  </div>
+
+
+  <div class="col-md-2"></div>
+  <div class="col-md-2"></div>
+  <div class="col-md-2"></div>
+  <div class="col-md-2"></div>
+</footer>
 
 
 
-    <script id="photo-album" type="text/x-handlebars-template">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">{{title}}{{albumNumber}}</div>
-          <div class="col-md-6">{{title}}</div>
+<!-- script -->
+
+    <script id="photo-tiles" type="text/x-handlebars-template">
+      <div class="item-tile">
+        <img src="{{image}}" alt="" />
+        <div class="bottom-info">
+        <span>{{title}}</span>
+        <span>{{shopName}}</span>
+        <span>{{price}}</span>
         </div>
       </div>
     </script>
 
     <script src="js/bundle.js"></script>
+
   </body>
 </html>
