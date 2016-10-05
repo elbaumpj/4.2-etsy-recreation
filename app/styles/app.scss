@@ -15,6 +15,12 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 img {
   max-width: 100%;
 }
+
+body {
+  background-color: #F5F5F1;
+}
+
+// start navbar styling
 .navbar {
   background-color: white;
   margin-bottom: 0;
@@ -57,10 +63,29 @@ img {
 
 // end top nav bars
 
+// start left nav bar styling
+
+.left-nav-links {
+  color: #0192B5;
+}
+
+
+// end left nav styling
+
 
 // template styling
+#products-container {
+  margin-top: 40px;
+}
+.item-tile {
+  margin-top: 15px;
+  border-radius: 10%;
+}
 .bottom-info {
   font-family: "Graphik Web";
+  text-overflow: ellipsis;
+  overflow: hidden;
+  background-color: white;
 }
 .item-tile {
   img {
@@ -68,6 +93,25 @@ img {
     width: 100%;
   }
   .title {
-    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .shop-name {
+    color: #939396;
+  }
+  .price {
+    color: #88C347;
+    float: right;
+  }
+}
+
+// footer styling
+
+.footer {
+  button {
+    background-color: #34A8C4;
+    color: white;
+  }
+  .section-titles {
+    font-weight: bold;
   }
 }

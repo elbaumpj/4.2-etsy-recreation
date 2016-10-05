@@ -12,13 +12,13 @@ var template = handlebars.compile(source);
 function run(data) {
     var products = data.results;
     console.log(products);
-    listProducts(products);
-
-  function listProducts(listofProducts) {
-    listofProducts.forEach(function(product){
-          //displayProduct(product)
-    });
-    }
+  //   listProducts(products);
+  //
+  // function listProducts(listofProducts) {
+  //   listofProducts.forEach(function(product){
+  //         //displayProduct(product)
+  //   });
+  //   }
 
   // function displayProduct(product) {
   //   // var image = product["Images"][0]["url_75x75"];
