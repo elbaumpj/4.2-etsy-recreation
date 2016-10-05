@@ -21,6 +21,10 @@ body {
 }
 
 // start navbar styling
+.container {
+  display: flex;
+  align-items: center;
+}
 .navbar {
   background-color: white;
   margin-bottom: 0;
@@ -37,6 +41,8 @@ body {
   float: right;
   color: #0192B5;
   padding-right: 15px;
+  font-size: 15px;
+  margin-left: auto;
   span {
     padding-right: 10px;
   }
@@ -60,6 +66,7 @@ body {
     padding: 0 15px;
   }
 }
+
 
 // end top nav bars
 
@@ -104,9 +111,17 @@ body {
   }
 }
 
+// related search styling
+
+.related-tags {
+  color: #0192B5;
+}
+
 // footer styling
 
 .footer {
+  border-top: 1px solid #E1E3DF;
+  padding-top: 20px;
   button {
     background-color: #34A8C4;
     color: white;

@@ -11,23 +11,23 @@
   <body>
     <!-- start navbars -->
     <nav class="navbar navbar-default">
-      <div class="container-fluid">
+      <div class="container">
         <span class="logo">Etsy</span>
-            <div>
+            <div class>
               <form class="navbar-form" role="search">
               <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search for items or shops">
+                <input type="text" class="form-control" placeholder="Search for items or shops">
               </div>
               <button type="submit" class="btn btn-default search-button">Search</button>
-                         </form>
+              </form>
             </div>
-      </div>
 
-      <div class="right-tags">
-        <span>Sell on Etsy</span>
-        <span>Register</span>
-        <span>Sign In</span>
-        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <div class="right-tags">
+              <span>Sell on Etsy</span>
+              <span>Register</span>
+              <span>Sign In</span>
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            </div>
       </div>
    </nav>
 
@@ -47,10 +47,9 @@
 <!-- start product tiles -->
 <div class="row">
   <div class="col-md-2">
-    <p>Show results for:</p>
+    <p><strong>Show results for:</strong></p>
     <nav class="navbar navbar-default">
-      <div>
-        <p class="heading-titles">All Categories</p>
+        <p class="section-titles"><strong>All Categories</strong></p>
         <div class="left-nav-links">
           <p>Craft Supplies and Tools</p>
           <p>Accessories</p>
@@ -67,19 +66,59 @@
           <p>Weddings</p>
           <p>Electronics &amp; Accesories</p>
           <p>Books, Movies &amp; Music</p>
-        </div>
       </div>
   </div>
 </nav>
 
+ <!-- empty container for tiles -->
   <div class="col-md-10">
       <div id="products-container" class="clearfix">
 
       </div>
   </div>
+<!-- end empty container  -->
+
 </div>
 
 <!-- end product tiles -->
+
+<!-- related search section -->
+<div class="row">
+<div class="col-md-offset-4">
+
+  <h5>Related to <strong>chunky yarn</strong></h5>
+
+  <div class="related-tags">
+    <div class="col-md-2">
+      <span>bulky yarn</span>
+      <span>chunky knit blanket</span>
+      <span>super chunky yarn</span>
+      <span>chunky yarn blanket</span>
+    </div>
+    <div class="col-md-2">
+      <span>chunky knit</span>
+      <span>thick yarn</span>
+      <span>giant yarn</span>
+      <span>hand dyed yarn</span>
+    </div>
+    <div class="col-md-2">
+      <span>chunky blanket</span>
+      <span>giant knitting needles</span>
+    </div>
+  </div>
+
+
+
+</div>
+</div>
+
+<div class="col-md-offset-4">
+  <h4>Get top trends and fresh editor's picks in your inbox with Etsy Finds</h4>
+  <input type="form"  placeholder="Enter your email">
+  <button type="submit" class="btn btn-default search-button">Subscribe</button>
+</div>
+
+<!-- end related search section  -->
 
 <!-- footer -->
 
@@ -137,7 +176,7 @@
 
 
 </footer>
-
+<!-- end footer -->
 
 
 <!-- script -->
@@ -148,7 +187,7 @@
         <div class="bottom-info">
         <span class="title">{{title}}</span>
         <span class="shop-name">{{Shop.shop_name}}</span>
-        <span class="price">{{price}}</span>
+        <span class="price">${{price}}</span>
         </div>
       </div>
     </script>
