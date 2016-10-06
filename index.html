@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Peter's Etsy Clone</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+
+  <body>
+    <!-- start navbars -->
+    <nav class="navbar navbar-default white-background">
+      <div class="container">
+        <span class="logo">Etsy</span>
+            <div class>
+              <form class="navbar-form" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search for items or shops">
+              </div>
+              <button type="submit" class="btn btn-default search-button">Search</button>
+              </form>
+            </div>
+
+            <div class="right-tags">
+              <span>Sell on Etsy</span>
+              <span>Register</span>
+              <span>Sign In</span>
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            </div>
+      </div>
+   </nav>
+
+   <nav class="navbar navbar-default categories white-background">
+     <span>Clothing &amp; Accessories</span>
+     <span>Jewelry</span>
+     <span>Craft Supplies &amp; Tools</span>
+     <span>Weddings</span>
+     <span>Entertainment</span>
+     <span>Home &amp; Living</span>
+     <span>Kids &amp; Baby</span>
+     <span>Vintage</span>
+   </nav>
+
+<!-- end navbars -->
+
+<!-- start left navbars -->
+<div class="row">
+  <div class="hidden-xs col-md-2">
+    <p><strong>Show results for:</strong></p>
+    <nav class="navbar navbar-default">
+        <p class="white-background"><strong>All Categories</strong></p>
+        <div class="left-nav-links">
+          <a href="https://www.etsy.com/"><p>Craft Supplies and Tools</p></a>
+          <a href="https://www.etsy.com/"><p>Accessories</p></a>
+          <a href="https://www.etsy.com/"><p>Home and Living</p></a>
+          <a href="https://www.etsy.com/"><p>Clothing</p></a>
+          <a href="https://www.etsy.com/"><p>Jewelry</p></a>
+          <a href="https://www.etsy.com/"><p>Bath &amp; Beauty</p></a>
+          <a href="https://www.etsy.com/"><p>Bags &amp; Purses</p></a>
+          <a href="https://www.etsy.com/"><p>Pet Supplies</p></a>
+          <a href="https://www.etsy.com/"><p>Art &amp; Collectibles</p></a>
+          <a href="https://www.etsy.com/"><p>Toys &amp; Games</p></a>
+          <a href="https://www.etsy.com/"><p>Shoes</p></a>
+          <a href="https://www.etsy.com/"><p>Paper &amp; Party Supplies</p></a>
+          <a href="https://www.etsy.com/"><p>Weddings</p></a>
+          <a href="https://www.etsy.com/"><p>Electronics &amp; Accesories</p></a>
+          <a href="https://www.etsy.com/"><p>Books, Movies &amp; Music</p></a>
+      </div>
+        <p><strong>Refine your search</strong></p>
+      <div class="refine">
+        <div class="location">
+          <p class="black-text"><strong>Shop Location</strong></p>
+          <input type="radio" name="name" value=""> Anywhere</br>
+          <input type="radio" name="name" value=""> United States</br>
+          <p class="blue-text hover">Choose a custom location</p>
+        </div>
+        <div class="item-type">
+          <p class="black-text"><strong>Item type</strong></p>
+          <input type="radio" name="name" value=""> All items</br>
+          <input type="radio" name="name" value=""> Handmade</br>
+          <input type="radio" name="name" value=""> Vintage</br>
+        </div>
+        <div class="price">
+          <p class="black-text"><strong>Price ($)</strong></p>
+          <input type="radio" name="name" value=""> Any price</br>
+          <input type="radio" name="name" value=""> Under $25</br>
+          <input type="radio" name="name" value=""> $25 to $50</br>
+          <input type="radio" name="name" value=""> $50 to $100</br>
+          <input type="radio" name="name" value=""> Over $100</br>
+          <input type="text" name="name" value="" placeholder="Low"> <span class="black-text">to</span> <input type="text" name="name" value="" placeholder="High">
+        </div>
+        <div class="color">
+          <p class="black-text"><strong>Filter by color</strong></p>
+          <ul class="list-inline">
+            <li class="vertical-align-bottom"></li>
+            <li class="vertical-align-bottom"></li>
+            <li class="vertical-align-bottom"></li>
+            <li class="vertical-align-bottom"></li>
+            <li class="vertical-align-bottom"></li>
+            <li class="vertical-align-bottom"></li>
+            <li class="vertical-align-bottom"></li>
+            <li class="vertical-align-bottom"></li>
+          </ul>
+        </div>
+        <div class="ordering-options">
+          <p class="black-text"><strong>Ordering options</strong></p>
+          <input type="checkbox" name="name" value=""> Accepts Etsy gift cards </br>
+          <input type="checkbox" name="name" value=""> Customizable </br>
+        </div>
+        <div class="shipping">
+          <p class="black-text"><strong>Ship to</strong></p>
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> United States
+        </div>
+      </div> <!-- goes with class refine -->
+  </div> <!--this is the div not associated with the second column-->
+</nav>
+
+ <!-- empty container for tiles -->
+  <div class="col-xs-12 col-md-10">
+      <div id="products-container" class="clearfix">
+
+      </div>
+  </div>
+<!-- end empty container  -->
+
+</div>
+<!-- end left navbars -->
+
+
+
+
+<!-- related search section -->
+<div class="row">
+<div class="col-md-offset-4">
+
+  <h5>Related to <strong>chunky yarn</strong></h5>
+
+  <div class="related-tags">
+    <div class="col-md-2">
+      <span>bulky yarn</span></br>
+      <span>chunky knit blanket</span></br>
+      <span>super chunky yarn</span></br>
+      <span>chunky yarn blanket</span></br>
+    </div>
+    <div class="col-md-2">
+      <span>chunky knit</span></br>
+      <span>thick yarn</span></br>
+      <span>giant yarn</span></br>
+      <span>hand dyed yarn</span></br>
+    </div>
+    <div class="col-md-2">
+      <span>chunky blanket</span></br>
+      <span>giant knitting needles</span></br>
+    </div>
+  </div>
+
+
+
+</div>
+</div>
+
+<div class="col-md-offset-4">
+  <h4>Get top trends and fresh editor's picks in your inbox with Etsy Finds</h4>
+  <input type="form"  placeholder="Enter your email">
+  <button type="submit" class="btn btn-default search-button">Subscribe</button>
+</div>
+
+<!-- end related search section  -->
+
+<!-- footer -->
+
+<footer class="footer col-md-offset-2">
+  <div class="col-md-2">
+    <p class="section-titles">Turn your passion into a business</p>
+    <button type="button" name="button" class="btn btn-default">Open a shop</button></br>
+    <p class="section-titles">Sell on Etsy</p>
+    <p>Open a shop</p>
+    <p>Seller Handbook</p>
+    <p>Etsy credit card reader</p>
+    <p>Manufacturing</p>
+  </div>
+
+
+  <div class="col-md-2">
+    <p class="section-titles">Join the community</p>
+    <p>Teams</p>
+    <p>Forums</p>
+    <p>Upcoming events</p>
+    <p>Affiliates</p>
+    <p>Etsy Local</p>
+  </div>
+
+  <div class="col-md-2">
+    <p class="section-titles">Discover and shop</p>
+    <p>Gift cards</p>
+    <p>Blog</p>
+    <p>Treasury</p>
+    <p>Mobile apps</p>
+    <p>Gift registries</p>
+    <p>Wholesale</p>
+    <p>Search</p>
+    <p>Editor's Pics</p>
+  </div>
+
+  <div class="col-md-2">
+    <p class="section-titles">Get to know us</p>
+    <p>About</p>
+    <p>Policies</p>
+    <p>Careers</p>
+    <p>Press</p>
+    <p>Developers</p>
+    <p>Investors</p>
+  </div>
+
+  <div class="col-md-2">
+  <p class="section-titles">Follow Etsy</p>
+  <p><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</p>
+  <p><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</p>
+  <p><i class="fa fa-pinterest-p" aria-hidden="true"></i> Pinterest</p>
+  <p><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</p>
+
+  </div>
+
+
+</footer>
+<!-- end footer -->
+
+
+<!-- script -->
+
+    <script id="photo-tiles" type="text/x-handlebars-template">
+      <div class="col-xs-6 col-md-3 item-tile">
+        <a href={{url}}><img src={{Images.0.url_170x135}} alt="" /></a>
+        <div class="bottom-info">
+        <span class="title">{{title}}</span>
+        <span class="shop-name">{{Shop.shop_name}}</span>
+        <span class="price">${{price}}</span>
+        </div>
+      </div>
+    </script>
+
+    <script src="js/bundle.js"></script>
+
+  </body>
+</html>
