@@ -94,9 +94,9 @@ body {
   div {
     border-top: 1px solid #E1E3DF;
   }
-  p:hover{
-    text-decoration: underline;
-  }
+}
+.hover:hover{
+  text-decoration: underline;
 }
 
 .color {
@@ -127,6 +127,7 @@ body {
   }
   li:nth-child(8) {
     background-color: #FFFFFF;
+    border: 1px solid black;
   }
 }
 
