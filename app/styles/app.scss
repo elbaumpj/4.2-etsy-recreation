@@ -24,9 +24,9 @@ body {
 .container {
   display: flex;
   align-items: center;
+  background-color: white;
 }
 .navbar {
-  background-color: white;
   margin-bottom: 0;
   min-height: 40px;
 }
@@ -72,10 +72,63 @@ body {
 
 // start left nav bar styling
 
+.white-background {
+  background-color: white;
+}
+.black-text {
+  color: black;
+  text-decoration: none;
+}
 .left-nav-links {
   color: #0192B5;
+  background-color: white;
+  p:hover {
+    text-decoration: underline;
+  }
 }
 
+.refine {
+  background-color: white;
+  margin-top: 20px;
+  color: #0192B5;
+  div {
+    border-top: 1px solid #E1E3DF;
+  }
+  p:hover{
+    text-decoration: underline;
+  }
+}
+
+.color {
+  li {
+    height: 22px;
+    width: 22px;
+  }
+  li:nth-child(1) {
+    background-color: #f40b32;
+  }
+  li:nth-child(2) {
+    background-color: #FF7F00;
+  }
+  li:nth-child(3) {
+    background-color: #F3CC0C;
+  }
+  li:nth-child(4) {
+    background-color: #0AC20A;
+  }
+  li:nth-child(5) {
+    background-color: #0CCCF3;
+  }
+  li:nth-child(6){
+    background-color: #A60CF3;
+  }
+  li:nth-child(7) {
+    background-color: #000000;
+  }
+  li:nth-child(8) {
+    background-color: #FFFFFF;
+  }
+}
 
 // end left nav styling
 
@@ -115,6 +168,9 @@ body {
 
 .related-tags {
   color: #0192B5;
+  span:hover {
+    text-decoration: underline;
+  }
 }
 
 // footer styling
@@ -128,5 +184,8 @@ body {
   }
   .section-titles {
     font-weight: bold;
+  }
+  p:hover {
+    text-decoration: underline;
   }
 }

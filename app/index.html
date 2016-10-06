@@ -10,7 +10,7 @@
 
   <body>
     <!-- start navbars -->
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default white-background">
       <div class="container">
         <span class="logo">Etsy</span>
             <div class>
@@ -31,7 +31,7 @@
       </div>
    </nav>
 
-   <nav class="navbar navbar-default categories">
+   <nav class="navbar navbar-default categories white-background">
      <span>Clothing &amp; Accessories</span>
      <span>Jewelry</span>
      <span>Craft Supplies &amp; Tools</span>
@@ -44,12 +44,12 @@
 
 <!-- end navbars -->
 
-<!-- start product tiles -->
+<!-- start left navbars -->
 <div class="row">
   <div class="col-md-2">
     <p><strong>Show results for:</strong></p>
     <nav class="navbar navbar-default">
-        <p class="section-titles"><strong>All Categories</strong></p>
+        <p class="white-background"><strong>All Categories</strong></p>
         <div class="left-nav-links">
           <p>Craft Supplies and Tools</p>
           <p>Accessories</p>
@@ -67,7 +67,52 @@
           <p>Electronics &amp; Accesories</p>
           <p>Books, Movies &amp; Music</p>
       </div>
-  </div>
+      <div class="refine">
+        <div class="location">
+          <p class="black-text"><strong>Shop Location</strong></p>
+          <input type="radio" name="name" value=""> Anywhere</br>
+          <input type="radio" name="name" value=""> United States</br>
+          <p class="blue-text">Choose a custom location</p>
+        </div>
+        <div class="item-type">
+          <p class="black-text"><strong>Item type</strong></p>
+          <input type="radio" name="name" value=""> All items</br>
+          <input type="radio" name="name" value=""> Handmade</br>
+          <input type="radio" name="name" value=""> Vintage</br>
+        </div>
+        <div class="price">
+          <p class="black-text"><strong>Price ($)</strong></p>
+          <input type="radio" name="name" value=""> Any price</br>
+          <input type="radio" name="name" value=""> Under $25</br>
+          <input type="radio" name="name" value=""> $25 to $50</br>
+          <input type="radio" name="name" value=""> $50 to $100</br>
+          <input type="radio" name="name" value=""> Over $100</br>
+          <input type="text" name="name" value="" placeholder="Low"> <span class="black-text">to</span> <input type="text" name="name" value="" placeholder="High">
+        </div>
+        <div class="color">
+          <p class="black-text"><strong>Filter by color</strong></p>
+          <ul class="list-inline">
+            <li class="vertical-align-bottom"></li>
+            <li class="vertical-align-bottom"></li>
+            <li class="vertical-align-bottom"></li>
+            <li class="vertical-align-bottom"></li>
+            <li class="vertical-align-bottom"></li>
+            <li class="vertical-align-bottom"></li>
+            <li class="vertical-align-bottom"></li>
+            <li class="vertical-align-bottom"></li>
+          </ul>
+        </div>
+        <div class="ordering-options">
+          <p class="black-text"><strong>Ordering options</strong></p>
+          <input type="checkbox" name="name" value=""> Accepts Etsy gift cards </br>
+          <input type="checkbox" name="name" value=""> Customizable </br>
+        </div>
+        <div class="shipping">
+          <p class="black-text"><strong>Ship to</strong></p>
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> United States
+        </div>
+      </div> <!-- goes with class refine -->
+  </div> <!--this is the div not associated with the second column-->
 </nav>
 
  <!-- empty container for tiles -->
@@ -79,8 +124,10 @@
 <!-- end empty container  -->
 
 </div>
+<!-- end left navbars -->
 
-<!-- end product tiles -->
+
+
 
 <!-- related search section -->
 <div class="row">
@@ -90,20 +137,20 @@
 
   <div class="related-tags">
     <div class="col-md-2">
-      <span>bulky yarn</span>
-      <span>chunky knit blanket</span>
-      <span>super chunky yarn</span>
-      <span>chunky yarn blanket</span>
+      <span>bulky yarn</span></br>
+      <span>chunky knit blanket</span></br>
+      <span>super chunky yarn</span></br>
+      <span>chunky yarn blanket</span></br>
     </div>
     <div class="col-md-2">
-      <span>chunky knit</span>
-      <span>thick yarn</span>
-      <span>giant yarn</span>
-      <span>hand dyed yarn</span>
+      <span>chunky knit</span></br>
+      <span>thick yarn</span></br>
+      <span>giant yarn</span></br>
+      <span>hand dyed yarn</span></br>
     </div>
     <div class="col-md-2">
-      <span>chunky blanket</span>
-      <span>giant knitting needles</span>
+      <span>chunky blanket</span></br>
+      <span>giant knitting needles</span></br>
     </div>
   </div>
 
